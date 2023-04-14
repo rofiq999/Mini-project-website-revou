@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>My Website</title>
+</head>
+<body>
+    <main>
+        <section class="sec-one">
+           <div class="container">
+            <div><img  class="img" src="./revo.png" alt="revo" width="50px" height="50px"></div>
+            <div class="nav-one">
+            <div class="feature">Home</div>
+            <div class="feature">Our Profile</div>
+            <div class="feature">Achievement</div>
+            <div class="feature">Message Us</div>
+        </div>
+           </div>
+        </section>
+        <section class="sec-two">
+            <div class="content">
+                <H1>Hi <span id="nama"></span>, Welcome To Website</H1>
+                <script>
+                    var name = prompt ("Masukkan Nama");
+                    document.getElementById("nama").innerText = name;
+                </script>
+                <p class="p1">Ini adalah website latihan pertama</p>
+                <div class="bg-img">
+                <img src="revo2.png" alt="revo2">
+            </div>
+            </div>
+        </section>
+        <section class="sec-tree">
+            <h1>Our Facilitation</h1>
+            <div class="fasilitas">
+                <div class="oval-one">
+                <div class="fas-one"></div>
+                <div class="text-one">Proffesional Teacher</div>
+                </div>
+                <div class="oval-one">
+                <div class="fas-one"></div>
+                <div class="text-two">Sport Field</div>
+                </div>
+                <div class="oval-one">
+                <div class="fas-one"></div>
+                <div class="text-tree">Classroom</div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-four">
+            <div class="left">
+                <h1>message Us</h1>
+            <form class="form" name="message-form" onsubmit="return validateForm()">
+                <label  for="name">Nama <span class="titik">:</span>
+                    <input type="text" name="full-name" placeholder="Nama">
+                </label>
+                <label for="">Tanggal Lahir <span class="titik2">:</span>
+                    <input type="date" name="birth-date">
+                </label>
+                <label for="">Jenis Kelamin<span class="titik2">:</span>
+                    <input class="input-radio" type="radio" id="male" name="gender" value="Laki-Laki"><span class="gender">Laki-Laki</span>
+                    <input class="input-radio" type="radio" id="female" name="gender" value="Perempuan"><span class="gender">Perempuan</span>
+                </label>
+                <div>
+                <span class="text-pesan"> Pesan : </span>
+                <textarea class="pesan" placeholder="Pesan" name="message"></textarea></div>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+            <script>
+                function validateForm() {
+                 const name = document.forms["message-form"] ["full-name"].value;
+                 const date = document.forms["message-form"] ["birth-date"].value;
+                 const gender = document.forms["message-form"] ["gender"].value;
+                 const message = document.forms["message-form"] ["message"].value;
+                
+                if (name == "" || date == "" || gender == "" || message == "") {
+                    alert("Input tidak boleh kosong"); 
+                    return false;
+                }
+
+                 document.getElementById("sender-full-name").innerText = name;
+                 document.getElementById("sender-date").innerText = date;
+                 document.getElementById("sender-gender").innerText = gender;
+                 document.getElementById("sender-message").innerText = message;
+                 return false;
+                }
+            </script>
+            </div>
+            <div class="right">
+                <!-- <div class="content-right">Current Time : <span id="date"></span></div> -->
+                <div class="content-right">Nama : <span id="sender-full-name"></span></div>
+                <div class="content-right">Tanggal Lahir : <span id="sender-date"></span></div>
+                <div class="content-right">Jenis Kelamin : <span id="sender-gender"></span>
+                <div class="content-right">Pesan : <span id="sender-message"></span>
+            </div>
+        </section>
+        <footer>
+           <div class="foot">Create By RevoU</div>   
+        </footer>
+    </main>
+</body>
+</html>

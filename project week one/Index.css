@@ -1,0 +1,169 @@
+* {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.sec-one {
+  border: 1px solid black;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 50px;
+}
+.img {
+  cursor: pointer;
+  border-radius: 50%;
+}
+.nav-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.feature {
+  cursor: pointer;
+  border: 1px solid black;
+  width: 130px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature:hover {
+  background-color: rgb(251, 255, 0);
+}
+.sec-two {
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+.content {
+  margin-top: 50px;
+  /* margin-left: 150px; */
+}
+h1,
+.p1 {
+  margin-left: 140px;
+}
+.bg-img {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.sec-tree {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+}
+.fasilitas {
+  padding-top: 20px;
+  padding-left: 140px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.fas-one {
+  width: 160px;
+  height: 160px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.oval-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.text-one {
+  font-size: 20px;
+}
+.text-two,
+.text-tree {
+  font-size: 20px;
+}
+.sec-four {
+  border: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 10rem;
+}
+.form {
+  padding-top: 30px;
+  padding-left: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.titik {
+  padding-left: 60px;
+}
+.titik2 {
+  padding-left: 6px;
+}
+input {
+  padding-left: 6px;
+  height: 30px;
+  width: 350px;
+}
+.input-radio {
+  width: 15px;
+  height: 15px;
+}
+.gender {
+  padding-left: 4px;
+}
+.pesan {
+  padding-left: 5px;
+  margin-left: 58px;
+  height: 100px;
+  width: 350px;
+}
+.text-pesan {
+  position: relative;
+  top: -80px;
+  left: 0;
+}
+.right {
+  border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-left: 6px;
+}
+.content-right {
+  font-weight: 700;
+}
+#sender-full-name,
+#sender-date,
+#sender-gender,
+#sender-message {
+  font-weight: 400;
+}
+.submit {
+  cursor: pointer;
+  width: 100%;
+}
+footer {
+  border: 1px solid black;
+  height: 80px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.foot {
+  padding-right: 60px;
+}
